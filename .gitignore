@@ -1,0 +1,16 @@
+.fake/
+.paket/paket.exe
+.vs/
+*.suo
+*.user
+
+build
+deploy/
+# Build results
+packages/
+[Dd]ebug/
+[Rr]elease/
+
+xunit.html
+.env
+.DS_Store
