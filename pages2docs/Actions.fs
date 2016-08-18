@@ -6,5 +6,15 @@ open Suave.Web             // for config
 open Suave.Filters
 open Suave.Writers
 open Suave.Operators
+open Suave.DotLiquid
+open DotLiquid
 
-let helloWorld = OK "<html><body><h1>Welcome to Pages2Docs!</h1></body></html>\n"
+setTemplatesDir "./templates"
+
+type Model =
+  { title : string }
+
+let helloWorld : WebPart =
+    let o = { title = "Hello" }
+    page "hello.liquid" o
+
