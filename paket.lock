@@ -1,7 +1,7 @@
 NUGET
   remote: https://www.nuget.org/api/v2
-  specs:
     Dapper (1.42)
+    DotLiquid (2.0.26)
     FAKE (4.26)
     FSharp.Core (4.0.0.1)
     FSharp.Data (2.2.5)
@@ -10,6 +10,10 @@ NUGET
     SQLProvider (1.0)
     Suave (1.0)
       FSharp.Core (>= 3.1.2.5)
+    Suave.DotLiquid (1.0)
+      DotLiquid (>= 1.8)
+      FSharp.Core (>= 3.1.2.5)
+      Suave (>= 1.0)
     System.Collections (4.0.10) - framework: dnxcore50
       System.Diagnostics.Debug (>= 4.0) - framework: dnxcore50
       System.Resources.ResourceManager (>= 4.0) - framework: dnxcore50

@@ -65,6 +65,17 @@
       <HintPath>..\packages\Suave\lib\net40\Suave.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="DotLiquid">
+      <HintPath>..\packages\DotLiquid\lib\net45\DotLiquid.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Suave.DotLiquid">
+      <HintPath>..\packages\Suave.DotLiquid\lib\net40\Suave.DotLiquid.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <None Include="templates\hello.liquid">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Types.fs" />
