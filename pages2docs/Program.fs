@@ -14,7 +14,10 @@ module Program =
   let app =
     choose
       [ GET >=> choose
-          [ path "/" >=> helloWorld]]
+          [ path "/" >=> helloWorld
+            path "/auth" >=> startAuth]
+        POST >=> choose 
+          [ path "/auth/handshake" >=> authComplete]]
 
   let port =
       match System.UInt16.TryParse(System.Environment.GetEnvironmentVariable("PORT")) with
